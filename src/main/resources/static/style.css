@@ -1,0 +1,300 @@
+/* GLOBAL STYLES */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0A192F;      /* Dark background */
+  color: #CCD6F6;                 /* Main text */
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #64FFDA;                 /* Accent color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #A3B18A;                 /* Accent hover */
+  text-decoration: underline;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #0A192F !important;
+}
+
+.navbar .nav-link {
+  color: #CCD6F6 !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #64FFDA !important;
+}
+
+/* PROFILE IMAGE */
+#about img {
+  border: 4px solid #64FFDA;
+  transition: transform 0.3s ease;
+}
+
+#about img:hover {
+  transform: scale(1.05);
+}
+
+/* BUTTONS */
+.btn-outline-dark {
+  border-color: #588157;
+  color: #588157;
+}
+
+.btn-outline-dark:hover {
+  background-color: #3A5A40;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #588157;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #3A5A40;
+}
+
+/* SECTION HEADINGS */
+h2, h3, h4, h5 {
+  color: #CCD6F6;
+  font-weight: 600;
+}
+
+/* BADGES */
+.badge {
+  font-size: 1rem;
+  border-radius: 12px;
+  padding: 10px 15px;
+  background-color: #1f2e47;
+  color: #64FFDA;
+}
+
+/* PROGRESS BARS */
+.progress {
+  height: 20px;
+  background-color: #1a253a;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  font-weight: 500;
+  background-color: #588157;
+}
+
+/* CARDS */
+.card {
+  border: none;
+  background-color: #112240;
+  color: #CCD6F6;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* CONTACT FORM */
+form {
+  background-color: #112240;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+input, textarea {
+  border-radius: 8px;
+  border: 1px solid #1a253a;
+  background-color: #0A192F;
+  color: #CCD6F6;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0A192F;
+  color: #CCD6F6;
+}
+
+footer a {
+  color: #64FFDA;
+}
+
+footer a:hover {
+  color: #A3B18A;
+}
+.text-accent {
+  color: #64FFDA !important;
+}
+
+.text-accent:hover {
+  color: #A3B18A !important;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Custom brand color */
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #64FFDA !important;
+}
+
+/* Custom navbar toggler color */
+.navbar-toggler-icon.custom-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(100,255,218,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Navbar link hover animation */
+.navbar-nav .nav-link {
+  color: #CCD6F6 !important;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #64FFDA;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #64FFDA !important;
+}
+#skills .card {
+  background-color: #112240;
+  color: #CCD6F6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+#skills i {
+  color: #64FFDA !important;
+}
+.project-card {
+  background-color: #112240;
+  color: #CCD6F6;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-accent {
+  border-color: #64FFDA;
+  color: #64FFDA;
+}
+
+.btn-outline-accent:hover {
+  background-color: #64FFDA;
+  color: #0A192F;
+}
+
+.btn-outline-muted {
+  border-color: #8892B0;
+  color: #8892B0;
+}
+
+.btn-outline-muted:hover {
+  background-color: #8892B0;
+  color: #0A192F;
+}
+
+.text-accent {
+  color: #64FFDA;
+}
+.contact-form {
+  background-color: #112240;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-input {
+  background-color: #0A192F;
+  border: 1px solid #1f2e47;
+  color: #CCD6F6;
+  border-radius: 8px;
+}
+
+.contact-input::placeholder {
+  color: #8892B0;
+}
+
+.contact-input:focus {
+  border-color: #64FFDA;
+  box-shadow: 0 0 0 0.2rem rgba(100, 255, 218, 0.25);
+  background-color: #0A192F;
+  color: #CCD6F6;
+}
+
+.btn-accent {
+  background-color: #588157;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #3A5A40;
+  color: #ffffff;
+}
+.text-accent {
+  color: #64FFDA;
+  transition: color 0.3s ease;
+}
+
+.text-accent:hover {
+  color: #A3B18A;
+}
+#about img:hover {
+  transform: scale(1.05);
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+.hero-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.transparenttextures.com/patterns/circles.png'); /* You can change this */
+  opacity: 0.2;
+  z-index: 1;
+  pointer-events: none;
+  background-repeat: repeat;
+}
